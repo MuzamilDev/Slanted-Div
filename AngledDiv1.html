@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Angled Div</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            color: #444;
+        }
+        
+        section {
+            height: 400px;
+            width: 1200px;
+            top: 50%;
+            left: 50%;
+            background-color: white;
+            border: 2px solid black;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            display: flex;
+        }
+        
+        .content {
+            height: 100%;
+            width: calc(50% - 50px);
+            background-color: white;
+            padding: 2% 5%;
+            line-height: 1.5rem;
+            font-size: 18px;
+            text-align: justify;
+        }
+        
+        .imagebox {
+            height: 100%;
+            width: calc(50% + 50px);
+            background-color: aqua;
+            border-left: 100px solid white;
+            border-bottom: 400px solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="skewbox">
+        <div class="content">
+            <h1>Muzamil Zaman</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem voluptatem reprehenderit nesciunt rerum dolorem quae quos fugiat neque nostrum? Esse tempore id laboriosam quod repellendus praesentium, fugit in expedita.
+
+            </p>
+        </div>
+        <div class="imagebox"></div>
+    </section>
+</body>
+
+</html>
